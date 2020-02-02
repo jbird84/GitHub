@@ -7,23 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA62DF0223E741B8003280B3 /* GHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA62DF0123E741B8003280B3 /* GHTextField.swift */; };
 		DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF2823E6045E002F7EC7 /* AppDelegate.swift */; };
 		DADCAF2B23E6045E002F7EC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF2A23E6045E002F7EC7 /* SceneDelegate.swift */; };
 		DADCAF2D23E6045E002F7EC7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF2C23E6045E002F7EC7 /* ViewController.swift */; };
-		DADCAF3023E6045E002F7EC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADCAF2E23E6045E002F7EC7 /* Main.storyboard */; };
 		DADCAF3223E60466002F7EC7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DADCAF3123E60466002F7EC7 /* Assets.xcassets */; };
 		DADCAF3523E60466002F7EC7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DADCAF3323E60466002F7EC7 /* LaunchScreen.storyboard */; };
+		DADCAF3D23E612E7002F7EC7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF3C23E612E7002F7EC7 /* SearchVC.swift */; };
+		DADCAF3F23E61332002F7EC7 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF3E23E61332002F7EC7 /* FavoritesListVC.swift */; };
+		DADCAF4323E653DF002F7EC7 /* GHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF4223E653DF002F7EC7 /* GHButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA62DF0123E741B8003280B3 /* GHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTextField.swift; sourceTree = "<group>"; };
 		DADCAF2523E6045E002F7EC7 /* GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADCAF2823E6045E002F7EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DADCAF2A23E6045E002F7EC7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DADCAF2C23E6045E002F7EC7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		DADCAF2F23E6045E002F7EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DADCAF3123E60466002F7EC7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DADCAF3423E60466002F7EC7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DADCAF3623E60466002F7EC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DADCAF3C23E612E7002F7EC7 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		DADCAF3E23E61332002F7EC7 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
+		DADCAF4223E653DF002F7EC7 /* GHButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,13 +62,16 @@
 		DADCAF2723E6045E002F7EC7 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
+				DADCAF4223E653DF002F7EC7 /* GHButton.swift */,
 				DADCAF2823E6045E002F7EC7 /* AppDelegate.swift */,
 				DADCAF2A23E6045E002F7EC7 /* SceneDelegate.swift */,
+				DADCAF3C23E612E7002F7EC7 /* SearchVC.swift */,
+				DADCAF3E23E61332002F7EC7 /* FavoritesListVC.swift */,
 				DADCAF2C23E6045E002F7EC7 /* ViewController.swift */,
-				DADCAF2E23E6045E002F7EC7 /* Main.storyboard */,
 				DADCAF3123E60466002F7EC7 /* Assets.xcassets */,
 				DADCAF3323E60466002F7EC7 /* LaunchScreen.storyboard */,
 				DADCAF3623E60466002F7EC7 /* Info.plist */,
+				DA62DF0123E741B8003280B3 /* GHTextField.swift */,
 			);
 			path = GitHub;
 			sourceTree = "<group>";
@@ -127,7 +136,6 @@
 			files = (
 				DADCAF3523E60466002F7EC7 /* LaunchScreen.storyboard in Resources */,
 				DADCAF3223E60466002F7EC7 /* Assets.xcassets in Resources */,
-				DADCAF3023E6045E002F7EC7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +146,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DADCAF4323E653DF002F7EC7 /* GHButton.swift in Sources */,
+				DADCAF3D23E612E7002F7EC7 /* SearchVC.swift in Sources */,
 				DADCAF2D23E6045E002F7EC7 /* ViewController.swift in Sources */,
+				DA62DF0223E741B8003280B3 /* GHTextField.swift in Sources */,
+				DADCAF3F23E61332002F7EC7 /* FavoritesListVC.swift in Sources */,
 				DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */,
 				DADCAF2B23E6045E002F7EC7 /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +159,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		DADCAF2E23E6045E002F7EC7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DADCAF2F23E6045E002F7EC7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		DADCAF3323E60466002F7EC7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +298,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinneykare.GitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +316,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kinneykare.GitHub;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
