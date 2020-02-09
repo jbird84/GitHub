@@ -97,9 +97,8 @@ class GHAlertVC: UIViewController {
         ])
     }
     
+    
     @objc func dismissVC() {
         dismiss(animated: true)
     }
-    
-
 }
