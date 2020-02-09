@@ -13,6 +13,8 @@
 		DA3EF61023EFB1EC0094CFD5 /* GHContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EF60F23EFB1EC0094CFD5 /* GHContainerView.swift */; };
 		DA3EF61223F053AC0094CFD5 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EF61123F053AC0094CFD5 /* UIViewController+Ext.swift */; };
 		DA3EF61823F0B4B20094CFD5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DA3EF61723F0B4B20094CFD5 /* Default-568h@2x.png */; };
+		DA3EF61B23F0C0E60094CFD5 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EF61A23F0C0E60094CFD5 /* Follower.swift */; };
+		DA3EF61D23F0C2240094CFD5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EF61C23F0C2240094CFD5 /* User.swift */; };
 		DA62DF0223E741B8003280B3 /* GHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA62DF0123E741B8003280B3 /* GHTextField.swift */; };
 		DACE204823EA5CFE0010A618 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE204723EA5CFE0010A618 /* FollowerListVC.swift */; };
 		DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF2823E6045E002F7EC7 /* AppDelegate.swift */; };
@@ -31,6 +33,8 @@
 		DA3EF60F23EFB1EC0094CFD5 /* GHContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHContainerView.swift; sourceTree = "<group>"; };
 		DA3EF61123F053AC0094CFD5 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 		DA3EF61723F0B4B20094CFD5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		DA3EF61A23F0C0E60094CFD5 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
+		DA3EF61C23F0C2240094CFD5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA62DF0123E741B8003280B3 /* GHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTextField.swift; sourceTree = "<group>"; };
 		DACE204723EA5CFE0010A618 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		DADCAF2523E6045E002F7EC7 /* GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,9 +97,17 @@
 				DADCAF2A23E6045E002F7EC7 /* SceneDelegate.swift */,
 				DADCAF3123E60466002F7EC7 /* Assets.xcassets */,
 				DADCAF3323E60466002F7EC7 /* LaunchScreen.storyboard */,
-				DADCAF3623E60466002F7EC7 /* Info.plist */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		DA3EF61923F0C0CC0094CFD5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DA3EF61A23F0C0E60094CFD5 /* Follower.swift */,
+				DA3EF61C23F0C2240094CFD5 /* User.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		DADCAF1C23E6045E002F7EC7 = {
@@ -118,7 +130,9 @@
 		DADCAF2723E6045E002F7EC7 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
+				DA3EF61923F0C0CC0094CFD5 /* Model */,
 				DA3EF61623F0B0080094CFD5 /* Support */,
+				DADCAF3623E60466002F7EC7 /* Info.plist */,
 				DA3EF61523F0AF930094CFD5 /* Extensions */,
 				DA3EF61423F0AF1F0094CFD5 /* Custom Views */,
 				DA3EF61323F0AEF30094CFD5 /* Screens */,
@@ -203,7 +217,9 @@
 				DADCAF4323E653DF002F7EC7 /* GHButton.swift in Sources */,
 				DADCAF3D23E612E7002F7EC7 /* SearchVC.swift in Sources */,
 				DA62DF0223E741B8003280B3 /* GHTextField.swift in Sources */,
+				DA3EF61D23F0C2240094CFD5 /* User.swift in Sources */,
 				DADCAF3F23E61332002F7EC7 /* FavoritesListVC.swift in Sources */,
+				DA3EF61B23F0C0E60094CFD5 /* Follower.swift in Sources */,
 				DA3EF60E23EFADC80094CFD5 /* GHAlertVC.swift in Sources */,
 				DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */,
 				DACE204823EA5CFE0010A618 /* FollowerListVC.swift in Sources */,
