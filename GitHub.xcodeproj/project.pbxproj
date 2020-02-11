@@ -16,6 +16,7 @@
 		DA3EF61B23F0C0E60094CFD5 /* Follower.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EF61A23F0C0E60094CFD5 /* Follower.swift */; };
 		DA3EF61D23F0C2240094CFD5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3EF61C23F0C2240094CFD5 /* User.swift */; };
 		DA62DF0223E741B8003280B3 /* GHTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA62DF0123E741B8003280B3 /* GHTextField.swift */; };
+		DA9646DC23F22F6100A5B682 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9646DB23F22F6100A5B682 /* NetworkManager.swift */; };
 		DACE204823EA5CFE0010A618 /* FollowerListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DACE204723EA5CFE0010A618 /* FollowerListVC.swift */; };
 		DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF2823E6045E002F7EC7 /* AppDelegate.swift */; };
 		DADCAF2B23E6045E002F7EC7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF2A23E6045E002F7EC7 /* SceneDelegate.swift */; };
@@ -36,6 +37,7 @@
 		DA3EF61A23F0C0E60094CFD5 /* Follower.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follower.swift; sourceTree = "<group>"; };
 		DA3EF61C23F0C2240094CFD5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		DA62DF0123E741B8003280B3 /* GHTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHTextField.swift; sourceTree = "<group>"; };
+		DA9646DB23F22F6100A5B682 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		DACE204723EA5CFE0010A618 /* FollowerListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListVC.swift; sourceTree = "<group>"; };
 		DADCAF2523E6045E002F7EC7 /* GitHub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitHub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DADCAF2823E6045E002F7EC7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		DA9646DA23F22F4700A5B682 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				DA9646DB23F22F6100A5B682 /* NetworkManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		DADCAF1C23E6045E002F7EC7 = {
 			isa = PBXGroup;
 			children = (
@@ -130,6 +140,7 @@
 		DADCAF2723E6045E002F7EC7 /* GitHub */ = {
 			isa = PBXGroup;
 			children = (
+				DA9646DA23F22F4700A5B682 /* Managers */,
 				DA3EF61923F0C0CC0094CFD5 /* Model */,
 				DA3EF61623F0B0080094CFD5 /* Support */,
 				DADCAF3623E60466002F7EC7 /* Info.plist */,
@@ -223,6 +234,7 @@
 				DA3EF60E23EFADC80094CFD5 /* GHAlertVC.swift in Sources */,
 				DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */,
 				DACE204823EA5CFE0010A618 /* FollowerListVC.swift in Sources */,
+				DA9646DC23F22F6100A5B682 /* NetworkManager.swift in Sources */,
 				DADCAF2B23E6045E002F7EC7 /* SceneDelegate.swift in Sources */,
 				DA3EF60C23EFABA60094CFD5 /* GHBodyLabel.swift in Sources */,
 			);
