@@ -26,6 +26,8 @@
 		DADCAF3D23E612E7002F7EC7 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF3C23E612E7002F7EC7 /* SearchVC.swift */; };
 		DADCAF3F23E61332002F7EC7 /* FavoritesListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF3E23E61332002F7EC7 /* FavoritesListVC.swift */; };
 		DADCAF4323E653DF002F7EC7 /* GHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF4223E653DF002F7EC7 /* GHButton.swift */; };
+		DAE1C80123F4EC5100789C6D /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1C80023F4EC5100789C6D /* FollowerCell.swift */; };
+		DAE1C80323F4ED3900789C6D /* GHAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1C80223F4ED3900789C6D /* GHAvatarImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		DADCAF3C23E612E7002F7EC7 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
 		DADCAF3E23E61332002F7EC7 /* FavoritesListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesListVC.swift; sourceTree = "<group>"; };
 		DADCAF4223E653DF002F7EC7 /* GHButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHButton.swift; sourceTree = "<group>"; };
+		DAE1C80023F4EC5100789C6D /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
+		DAE1C80223F4ED3900789C6D /* GHAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAvatarImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +80,14 @@
 		DA3EF61423F0AF1F0094CFD5 /* Custom Views */ = {
 			isa = PBXGroup;
 			children = (
+				DAE1C7FF23F4EC1400789C6D /* Cells */,
 				DA3EF60F23EFB1EC0094CFD5 /* GHContainerView.swift */,
 				DA3EF60B23EFABA60094CFD5 /* GHBodyLabel.swift */,
 				DA3EF60923EF8D9A0094CFD5 /* GHTitleLabel.swift */,
 				DA62DF0123E741B8003280B3 /* GHTextField.swift */,
 				DADCAF4223E653DF002F7EC7 /* GHButton.swift */,
 				DA3EF60D23EFADC80094CFD5 /* GHAlertVC.swift */,
+				DAE1C80223F4ED3900789C6D /* GHAvatarImageView.swift */,
 			);
 			path = "Custom Views";
 			sourceTree = "<group>";
@@ -162,6 +168,14 @@
 			path = GitHub;
 			sourceTree = "<group>";
 		};
+		DAE1C7FF23F4EC1400789C6D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DAE1C80023F4EC5100789C6D /* FollowerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -240,8 +254,10 @@
 				DADCAF3D23E612E7002F7EC7 /* SearchVC.swift in Sources */,
 				DA62DF0223E741B8003280B3 /* GHTextField.swift in Sources */,
 				DA3EF61D23F0C2240094CFD5 /* User.swift in Sources */,
+				DAE1C80123F4EC5100789C6D /* FollowerCell.swift in Sources */,
 				DADCAF3F23E61332002F7EC7 /* FavoritesListVC.swift in Sources */,
 				DA3EF61B23F0C0E60094CFD5 /* Follower.swift in Sources */,
+				DAE1C80323F4ED3900789C6D /* GHAvatarImageView.swift in Sources */,
 				DA3EF60E23EFADC80094CFD5 /* GHAlertVC.swift in Sources */,
 				DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */,
 				DACE204823EA5CFE0010A618 /* FollowerListVC.swift in Sources */,

@@ -16,13 +16,13 @@ class NetworkManager {
     private init() {}
     
     
-    func getFollowers(for username: String, page: Int, completed: @escaping ([Follower]?, ErrorMessage?) -> Void) {
+    func getFollowers(for username: String, page: Int, completed: @escaping (Result<[Follower], GHError>) -> Void) {
         //set URL
         let endpoint = baseURL + "\(username)/followers?per_page=100&page=\(page)"
         
         //since the current endpoint is a string we need to convert this into a URL Object (we use a guard statement to do this)
         guard let url = URL(string: endpoint) else {
-            completed(nil, .invalidUsername)
+            completed(.failure(.invalidUsername))
             return
         }
         
@@ -30,18 +30,18 @@ class NetworkManager {
             
             //data, response and error are all optionals so we must unwrap them. NOTE: error = normally internet issue. Response = an issue with the server
             if let _ = error {
-                completed(nil, .unableToComplete)
+                completed(.failure(.unableToComplete))
                 return
             }
             
             //statusCode == 200 means OK or that everything went correctly as far as the URL response.
             guard let response = response as? HTTPURLResponse, response.statusCode == 200 else {
-                completed(nil, .invalidResponse)
+                completed(.failure(.invalidResponse))
                 return
             }
             
             guard let data = data else {
-                completed(nil, .invalidData)
+                completed(.failure(.invalidData))
                 return
             }
             
@@ -52,9 +52,9 @@ class NetworkManager {
                 let decoder = JSONDecoder()
                 decoder.keyDecodingStrategy = .convertFromSnakeCase
                 let followers = try decoder.decode([Follower].self, from: data)
-                completed(followers, nil)
+                completed(.success(followers))
             } catch {
-                completed(nil, .invalidData)
+                completed(.failure(.invalidData))
             }
         }
         //MUST put task.resume() to actually START the network call.
