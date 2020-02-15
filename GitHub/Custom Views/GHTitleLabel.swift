@@ -42,5 +42,6 @@ class GHTitleLabel: UILabel {
         
         //MUST SET THIS TO FAST TO USE AUTO LAYOUT
         translatesAutoresizingMaskIntoConstraints = false
+        
     }
 }

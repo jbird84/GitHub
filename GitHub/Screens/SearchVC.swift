@@ -19,6 +19,7 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        usernameTextField.autocapitalizationType = .words
         view.backgroundColor = .systemBackground
         configureLogoImageView()
         configureTextField()
@@ -69,6 +70,7 @@ class SearchVC: UIViewController {
     func configureTextField() {
         view.addSubview(usernameTextField)
         usernameTextField.delegate = self
+        
         
         NSLayoutConstraint.activate([
             usernameTextField.topAnchor.constraint(equalTo: logoImageView.bottomAnchor, constant: 48),
