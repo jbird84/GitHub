@@ -28,6 +28,7 @@
 		DADCAF4323E653DF002F7EC7 /* GHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = DADCAF4223E653DF002F7EC7 /* GHButton.swift */; };
 		DAE1C80123F4EC5100789C6D /* FollowerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1C80023F4EC5100789C6D /* FollowerCell.swift */; };
 		DAE1C80323F4ED3900789C6D /* GHAvatarImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1C80223F4ED3900789C6D /* GHAvatarImageView.swift */; };
+		DAE1C80623F8ACE800789C6D /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAE1C80523F8ACE800789C6D /* UIHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		DADCAF4223E653DF002F7EC7 /* GHButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHButton.swift; sourceTree = "<group>"; };
 		DAE1C80023F4EC5100789C6D /* FollowerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerCell.swift; sourceTree = "<group>"; };
 		DAE1C80223F4ED3900789C6D /* GHAvatarImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GHAvatarImageView.swift; sourceTree = "<group>"; };
+		DAE1C80523F8ACE800789C6D /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				DA9646DE23F378B000A5B682 /* ErrorMessage.swift */,
+				DAE1C80523F8ACE800789C6D /* UIHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 				DADCAF2923E6045E002F7EC7 /* AppDelegate.swift in Sources */,
 				DACE204823EA5CFE0010A618 /* FollowerListVC.swift in Sources */,
 				DA9646DF23F378B000A5B682 /* ErrorMessage.swift in Sources */,
+				DAE1C80623F8ACE800789C6D /* UIHelper.swift in Sources */,
 				DA9646DC23F22F6100A5B682 /* NetworkManager.swift in Sources */,
 				DADCAF2B23E6045E002F7EC7 /* SceneDelegate.swift in Sources */,
 				DA3EF60C23EFABA60094CFD5 /* GHBodyLabel.swift in Sources */,
